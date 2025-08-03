@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<package version="2.0"  unique-identifier="PrimaryID">
+
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+		<dc:title>A Daily Lottery Turned Me into a Witch</dc:title>
+		<dc:language>en</dc:language>
+		<dc:identifier id="PrimaryID" opf:scheme="uuid">bd96564f-d99c-4e38-8bd7-accf99be327e</dc:identifier>
+        <dc:date opf:event="publication">2025-07-30T07:24:29.039Z</dc:date>
+        
+		    <dc:description>Transported to a Western fantasy world, I became a noble with garbage-tier aptitude. Although I awakened a talent that lets me draw a lottery every day, most of the stuff I pulled was pure junk. Hecate had already mentally prepared to lie flat and mooch off the family forever. But unexpectedly, the lottery talent drew the Witch Seed. Every gift from fate has its price clearly marked. The moment he chose the Witch Seed, his affinity with magic hit the maximum. Just breathing in a bit of air would boost his power. But the cost was…</dc:description>
+        
+		<dc:creator opf:role="aut">梦里寻九</dc:creator>
+		<dc:publisher>Novel Update</dc:publisher>
+        
+		    <meta name="cover" content="cover-image" />
+        
+        
+	</metadata>
+
+	<manifest>
+        
+		    <item id="front-cover" href="OEBPS/front-cover.html" media-type="application/xhtml+xml" />
+        
+		<item id="title-page" href="OEBPS/title-page.html" media-type="application/xhtml+xml" />
+		<item id="notes" href="OEBPS/notes.html" media-type="application/xhtml+xml" />
+		<item id="table-of-contents" href="OEBPS/table-of-contents.html" media-type="application/xhtml+xml" />
+        
+            <item id="page-0" href="OEBPS/page-0-chapter-1753860269039.html" media-type="application/xhtml+xml" />
+        
+            <item id="page-1" href="OEBPS/page-1-chapter-1753860269039.html" media-type="application/xhtml+xml" />
+        
+            <item id="page-2" href="OEBPS/page-2-chapter-1753860269040.html" media-type="application/xhtml+xml" />
+        
+        
+		    <item id="cover-image" href="OEBPS/cover-image.jpg" media-type="image/jpeg" properties="cover-image" />
+        
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+        
+	</manifest>
+
+	<spine toc="ncx">
+        
+		    <itemref idref="front-cover" linear="no" />
+        
+		<itemref idref="title-page" linear="yes" />
+		<itemref idref="table-of-contents" linear="yes" />
+        
+            <itemref idref="page-0" linear="yes" />
+        
+            <itemref idref="page-1" linear="yes" />
+        
+            <itemref idref="page-2" linear="yes" />
+        
+        
+	</spine>
+
+	<guide>
+        
+		    <reference type="cover" title="Cover" href="OEBPS/front-cover.html" />
+        
+		<reference type="toc" title="Table of Contents" href="OEBPS/table-of-contents.html" />
+	</guide>
+
+</package>

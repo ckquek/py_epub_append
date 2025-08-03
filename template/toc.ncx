@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+
+<ncx version="2005-1" xml:lang="en" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+	<head>
+		<meta name="dtb:uid" content="bd96564f-d99c-4e38-8bd7-accf99be327e" />
+		<meta name="dtb:depth" content="2" />
+		<meta name="dtb:totalPageCount" content="0" />
+		<meta name="dtb:maxPageNumber" content="0" />
+	</head>
+
+	<docTitle>
+		<text>A Daily Lottery Turned Me into a Witch</text>
+	</docTitle>
+
+	<docAuthor>
+		<text>梦里寻九</text>
+	</docAuthor>
+
+	<navMap>
+		<navPoint id="title-page" playOrder="1">
+			<navLabel>
+				<text>Information</text>
+			</navLabel>
+			<content src="OEBPS/title-page.html" />
+		</navPoint>
+		<navPoint id="table-of-contents" playOrder="2">
+			<navLabel>
+				<text>Table of Contents</text>
+			</navLabel>
+			<content src="OEBPS/table-of-contents.html" />
+		</navPoint>
+        
+            <navPoint id="page-0" playOrder="3">
+                <navLabel>
+                    <text>Chapter</text>
+                </navLabel>
+                <content src="OEBPS/page-0-chapter-1753860269039.html" />
+            </navPoint>
+        
+            <navPoint id="page-1" playOrder="4">
+                <navLabel>
+                    <text>Chapter</text>
+                </navLabel>
+                <content src="OEBPS/page-1-chapter-1753860269039.html" />
+            </navPoint>
+        
+            <navPoint id="page-2" playOrder="5">
+                <navLabel>
+                    <text>Chapter</text>
+                </navLabel>
+                <content src="OEBPS/page-2-chapter-1753860269040.html" />
+            </navPoint>
+        
+        
+	</navMap>
+</ncx>
