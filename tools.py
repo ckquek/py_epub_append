@@ -11,8 +11,7 @@ def filepathCleanup(filepath):
     if pref_substr == "'" and pref_substr == post_substr:
         cleaned_filepath = filepath[1:-1]
        
-    folder_name = cleaned_filepath.rsplit("\\", 1)[1]
-    return cleaned_filepath, folder_name
+    return cleaned_filepath
 
 def text_to_html_paragraphs(text):
     # First, replace multiple newlines with a single newline,
@@ -31,3 +30,8 @@ def text_to_html_paragraphs(text):
 
     # Wrap each line in a <p> tag and join them
     return title, ''.join(f"<p>{line.strip()}</p>\n" for line in lines)
+
+def sorted_alphanumeric(data):
+    convert = lambda text: int(text) if text.isdigit() else text.lower()
+    alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
+    return sorted(data, key=alphanum_key)
