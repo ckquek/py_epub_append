@@ -17,9 +17,9 @@ def eppath_setup(page_tmplt_path):
     settings.configure(TEMPLATES=TEMPLATES)
     django.setup()
 
-def append_pages(page_source_path, current_path, template_path, folder_name):
+def append_pages(page_source_path, source_path, dest_path, folder_name):
     page_detail_dict = []
-    oebps_path = current_path / "OEBPS"
+    oebps_path = dest_path / "OEBPS"
     path = str(page_source_path.absolute())
     # Iterate over files in page_source_path
     listdir = sorted_alphanumeric(os.listdir(path))
@@ -39,7 +39,7 @@ def append_pages(page_source_path, current_path, template_path, folder_name):
                 new_filename = basename + ".html"
                 with open(oebps_path / new_filename, 'w') as writefile:
                     writefile.write(html_text)
-    build_book(current_path, folder_name, template_path, page_detail_dict)
+    build_book(dest_path, folder_name, source_path, page_detail_dict)
 
 def build_page(title, data):
     template = get_template('page.html')
@@ -48,9 +48,9 @@ def build_page(title, data):
     render = template.render(c)
     return render
     
-def build_book(current_path, folder_name, template_path, page_detail_dict):
+def build_book(current_path, folder_name, source_path, page_detail_dict):
     namespaces = {"ns" : "http://www.idpf.org/2007/opf"}
-    xmlfile_path = template_path / "book.xml"
+    xmlfile_path = source_path / "book.opf"
     tree = ET.parse(xmlfile_path)
     root = tree.getroot()
     manifest = root.find('ns:manifest', namespaces)
